@@ -1,17 +1,31 @@
 <!doctype html>
 <html>
-	<head>
-		
+		<title>ZRAM_TEMP01</title>
+
 		<script id="sap-ui-bootstrap"
 			src="../../resources/sap-ui-core.js"
 			data-sap-ui-libs="sap.m"
 			data-sap-ui-theme="sap_belize"
 			data-sap-ui-compatVersion="edge"
-			data-sap-ui-resourceroots='{"abcZRAM_TEMP01": ""}'>
-		</script>		
-		
+			data-sap-ui-resourceroots='{"abcZRAM_TEST01": ""}'>
+		</script>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<script>
+			sap.ui.getCore().attachInit(function() {
+				new sap.m.Shell({
+					app: new sap.ui.core.ComponentContainer({
+						height : "100%",
+						name : "abcZRAM_TEST01"
+					})
+				}).placeAt("content");
+			});
+		</script>
 	</head>
-	<body>
-		<h1>first app using git </h1>
+
+	<body class="sapUiBody" id="content">
+		<h1> hello world </h1>
 	</body>
+
 </html>
